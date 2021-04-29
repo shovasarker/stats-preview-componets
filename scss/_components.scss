@@ -1,0 +1,62 @@
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primary-color-dark-blue;
+    background-size: cover;
+    font-size: 15px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 85px 25px;
+    background: $primary-color-desaturated-blue;
+    border-radius: 10px;
+    overflow: hidden;
+    .card_img {
+        min-width: 100%;
+        height: 240px;
+        background: linear-gradient(hsla(277, 64%, 61%,0.4),hsla(277, 64%, 61%,0.4)),url("../images/image-header-mobile.jpg")center top no-repeat;
+        background-size: cover;
+    }
+    .description {
+        margin: 40px 30px;
+        &__heading {
+            font-family: 'Inter', sans-serif;
+            color: $text-color-white;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            span {
+                color: $primary-color-soft-violet;
+            }
+        }
+        &__prgf {
+            font-family: 'Inter', sans-serif;
+            color: $text-transparent-white;
+            line-height: 1.5em;
+            margin-bottom: 25px;
+        }
+        &__stats__ex {
+            margin: 20px auto;
+            &__heading {
+                font-family: 'Inter', sans-serif;
+                color: $text-color-white;
+                font-size: 1.8em;
+            }
+            &__name {
+                font-family: 'Lexend Deca', sans-serif;
+                color: $text-Slightly-transparent-white;
+                line-height: 1.2em;
+                text-transform: uppercase;
+                letter-spacing: 0.8px;
+                
+            }
+        }
+    }
+
+}

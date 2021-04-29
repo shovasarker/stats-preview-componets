@@ -1,0 +1,25 @@
+
+// Importing Different Links
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+// Variable Declaration
+$primary-color-dark-blue: hsl(233, 47%, 7%);
+$primary-color-desaturated-blue: hsl(244, 38%, 16%);
+$primary-color-soft-violet: hsl(277, 64%, 61%);
+
+$text-color-white: hsl(0, 0%, 100%);
+$text-transparent-white: hsla(0, 0%, 100%, 0.75);
+$text-Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+// Default Reset
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}

@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #090b1a;
+  background-size: cover;
+  font-size: 15px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 85px 25px;
+  background: #1b1938;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container .card_img {
+  min-width: 100%;
+  height: 240px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 92, 219, 0.4)), to(rgba(170, 92, 219, 0.4))), url("../images/image-header-mobile.jpg") center top no-repeat;
+  background: linear-gradient(rgba(170, 92, 219, 0.4), rgba(170, 92, 219, 0.4)), url("../images/image-header-mobile.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.container .description {
+  margin: 40px 30px;
+}
+
+.container .description__heading {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.container .description__heading span {
+  color: #aa5cdb;
+}
+
+.container .description__prgf {
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5em;
+  margin-bottom: 25px;
+}
+
+.container .description__stats__ex {
+  margin: 20px auto;
+}
+
+.container .description__stats__ex__heading {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 1.8em;
+}
+
+.container .description__stats__ex__name {
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    width: 100wh;
+    height: 100vh;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    text-align: center;
+    margin: 125px 150px;
+  }
+  .container .card_img {
+    min-width: 50%;
+    height: 454px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 92, 219, 0.4)), to(rgba(170, 92, 219, 0.4))), url("../images/image-header-desktop.jpg") center top no-repeat;
+    background: linear-gradient(rgba(170, 92, 219, 0.4), rgba(170, 92, 219, 0.4)), url("../images/image-header-desktop.jpg") center top no-repeat;
+    background-size: cover;
+    border: 0px;
+  }
+  .container .description {
+    margin: 60px 50px 60px 70px;
+    padding-right: 30px;
+  }
+  .container .description__heading {
+    font-size: 2.3em;
+    margin-bottom: 35px;
+    text-align: left;
+  }
+  .container .description__prgf {
+    line-height: 1.7em;
+    margin-bottom: 70px;
+    margin-right: 60px;
+    text-align: left;
+  }
+  .container .description__stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .container .description__stats__ex {
+    margin: 10px 45px 10px 0;
+  }
+  .container .description__stats__ex__heading {
+    font-size: 1.6em;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  .container .description__stats__ex__name {
+    line-height: 1em;
+    letter-spacing: 0.2px;
+    text-align: left;
+    font-weight: 400;
+  }
+}
+/*# sourceMappingURL=main.css.map */
